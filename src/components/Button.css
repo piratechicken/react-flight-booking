@@ -1,0 +1,16 @@
+.btn {
+  color: #3a3a3a;
+  background: rgb(243, 240, 240);
+  border: solid 1px #3f3f3f;
+  border-radius: 2px;
+  height: 20px;
+}
+
+.btn--primary {
+  background-color: tomato;
+  border-color: rgb(211, 55, 28);
+}
+
+.btn--rainbow {
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
