@@ -9,9 +9,9 @@ class App extends Component {
       <div className="App">
         <h1>heading...</h1>
         <p>Hello simon... This is React</p>
-        <Button title ='Find Flights' primary={ true }/>
+        <Button title ='Find Flights' primary />
         <Button title='Sign up' />
-        <Button title='Enter competition' magic={ true } />
+        <Button title='Enter competition' magic />
         <ul>
           <li>One</li>
           <li>Two</li>
