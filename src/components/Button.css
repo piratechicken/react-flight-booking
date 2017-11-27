@@ -4,6 +4,10 @@
   border: solid 1px #3f3f3f;
   border-radius: 2px;
   height: 20px;
+  font-size: inherit;
+  padding: 1rem;
+  box-sizing: border-box;
+  line-height: 1rem;
 }
 
 .btn--primary {

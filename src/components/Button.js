@@ -2,9 +2,10 @@ import React from 'react';
 import './Button.css';
 
 function Button({ 
-  title, 
+  children, 
   primary =  false, 
-  magic = false
+  magic = false,
+  href
 }) {
   let className = 'btn'
 
@@ -16,12 +17,31 @@ function Button({
     className += ' btn--rainbow'
   }
 
+  const renderLink = !!href // Or href != null
+  const Component = renderLink ? 'a' : 'button'
+
   return (
-    <button className={ className }>
-      { title }
-    </button>
+    <Component href={ href } className={ className }>
+      { children }
+    </Component>
   )
 }
+
+
+//   if (renderAnchor) {
+//     return (
+//       <a href={ href } className={ className } >
+//         { children }
+//       </a>
+//     )
+//   }
+
+//   return (
+//     <button className={ className }>
+//       { children }
+//     </button>
+//   )
+// }
 
 export default Button
 // module.exports = Button
